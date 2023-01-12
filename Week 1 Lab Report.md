@@ -25,5 +25,3 @@ I then did `ls -lat` which shows a lot more information about the items in that 
 ![Trying out Commands](./images/Lab_1_Commands_3.png)  
 
 After that I tried the `cp` command to copy a file called `hello.txt` from another directory but I did not have the permission to do so. I also tried using the `cat` command on this file but I also did not have the permission to do so.
-
-s
