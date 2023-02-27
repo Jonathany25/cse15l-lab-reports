@@ -9,7 +9,7 @@ The ssh command was 1 up in the search history, so I used the up arrow in order 
 
 ### Step 5 : Clone your fork of the repository from your Github account  
 Keys Pressed : `<ctrl-r>, "git c", <enter>`  
-I then cloned the repository, by using <ctrl-r> to look up a command I had previously used.  
+I then cloned the repository, by using `<ctrl-r>` to look up a command I had previously used.  
 ![Searching "git clone"](./img/step_5_1.png)  
 After that, I pressed <enter> to run the command.  
 ![Running "git clone"](./img/step_5_2.png)  
@@ -37,4 +37,4 @@ I then run the same command as in step 7, ```javac -cp .:lib/hamcrest-core-1.3.j
   
   
 ### Conclusion  
-Although I have done many tricks here, most of it won't be as useful in actual scenarios as some of it, especially the really long command, will require preparation beforehand. Something useful I found though, is ctrl-r, which allows me to search previous commands, and of course the trusty up arrow which I have been using for a long time. I was able to reach a best time of 40 seconds this way.
+Although I have done many tricks here, most of it won't be as useful in actual scenarios as some of it, especially the really long command, will require preparation beforehand. Something useful I found though, is ctrl-r, which allows me to search previous commands, and of course the trusty up arrow which I have been using for a long time. I was able to reach a best time of 35 seconds and an average of 40 seconds this way.
