@@ -23,9 +23,9 @@ I then change into the lab7 directory, and run ```javac -cp .:lib/hamcrest-core-
   
 ### Step 7 : Edit the code file to fix the failing test  
 Keys Pressed : `"nano L", <tab>, ".j", <tab><enter>, <ctrl-w><ctrl-t>, "43,13", <enter><backspace>, "2", <ctrl-o><enter><ctrl-x>`  
-I first do ```nano ListExamples.java``` to open the file.  
+I first did ```nano ListExamples.java``` to open the file.  
 ![Opening nano](./img/step_7_1.png)  
-I then use two shortcuts, `<ctrl-w>`, which looks things up in the file. Then I do `<ctrl-t>`, which gives me the ability to look up based on line and column number. The numbers 43 and 13 are where I have found the error to be.  
+I then use two shortcuts, `<ctrl-w>`, which looks things up in the file. Then I did `<ctrl-t>`, which gives me the ability to look up based on line and column number. The numbers 43 and 13 are where I have found the error to be.  
 ![Searching](./img/step_7_2.png)  
 After that, I edited the file, saved, and closed it.
 ![Editing](./img/step_7_3.png)
@@ -33,7 +33,7 @@ After that, I edited the file, saved, and closed it.
   
 ### Steps 8 & 9 : Run the tests, demonstrating that they now succeed; Commit and push the resulting change to your Github account (you can pick any commit message!)  
 Keys Pressed : `<ctrl-v>`  
-I then run the same command as in step 7, ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java;java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests;git add ListExamples.java;git commit -m"a";git push origin main```, which now compiles the file, runs the test, and adds the file, commits it and pushes it onto the github.  
+I then run the same command as in step 7, ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java;java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests;git add ListExamples.java;git commit -m"a";git push origin main```, which now compiles the file and runs the test. It then adds the file, commits it and pushes it onto the github.  
   
   
 ### Conclusion  
