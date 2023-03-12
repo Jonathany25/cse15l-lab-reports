@@ -18,11 +18,11 @@ echo 'Finished cloning'
 
 cd student-submission
 
-if [[ -e ${FILE}.java ]]
+if [[ -e $FILE.java ]]
     then
-        echo  ${FILE}'.java found'
+        echo  $FILE'.java found'
 else
-    echo  ${FILE}'.java not found'
+    echo  $FILE'.java not found'
     exit
 fi
 
@@ -44,7 +44,7 @@ java -cp $CPATH org.junit.runner.JUnitCore $TESTFILE>output.txt 2>error-output.t
 LINECOUNT=`grep -c '' output.txt`
 RESULTLINE=`grep 'Tests run:' output.txt`
 
-if [[ RESULTLINE -eq '' ]] 
+if [[ $RESULTLINE == '' ]] 
     then
         RESULTLINE=`grep 'OK' output.txt`
         TESTSRUN=`echo $RESULTLINE | cut -d'(' -f2 | cut -d' ' -f1`
@@ -56,11 +56,11 @@ fi
 
 TESTSPASSED=$(($TESTSRUN-$FAILURES))
 
-if [[ FAILURES -eq 0 ]]
+if [[ $FAILURES -eq 0 ]]
     then 
-        echo ${TESTSPASSED}'/'${TESTSRUN}' tests passed'.
+        echo $TESTSPASSED'/'$TESTSRUN' tests passed'.
 else 
-    echo ${TESTSPASSED}'/'${TESTSRUN}' tests passed'.
+    echo $TESTSPASSED'/'$TESTSRUN' tests passed'.
     LINES=$(($LINECOUNT-4))
     head -n $LINES output.txt
 fi
